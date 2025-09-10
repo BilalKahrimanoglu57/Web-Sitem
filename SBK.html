@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html style="margin:0; padding:0; height:100%;">
+
+<head>
+    <title>Sbk57.net</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        img.bg {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            opacity: 0.5;
+            display: block;
+        }
+
+        .center-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(250, 235, 215, 0.85);
+            padding: 60px 60px 40px 60px;
+            /* üst boşluğu arttırdım */
+            border-radius: 20px;
+            text-align: center;
+            font-family: 'Trebuchet MS', sans-serif;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .amblem-box {
+            position: absolute;
+            top: -60px;
+            /* kutunun dışına taşı */
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .amblem {
+            width: 100px;
+            height: auto;
+        }
+
+        .name {
+            font-size: 54px;
+            font-weight: 600;
+            color: rgb(134, 100, 87);
+        }
+
+        .sub {
+            font-size: 25px;
+            font-weight: 500;
+            color: rgb(134, 100, 87);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links img {
+            width: 48px;
+            height: 48px;
+            transition: transform 0.2s ease;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.15);
+        }
+
+        .copyright-text {
+            position: fixed;
+            right: 24px;
+            bottom: 16px;
+            color: #c9bc96;
+            font-size: 16px;
+            background: rgba(92, 61, 26, 0.7);
+            padding: 6px 16px;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="pexels-life-of-pix-7919.jpg" alt="Background" class="bg">
+
+    <div class="center-text">
+        <!-- Amblem en üstte -->
+        <img src="bozkurt amblem.png" alt="Bozkurt Amblem" class="amblem">
+
+        <!-- Yazılar -->
+        <div class="name">Seyyid Bilal Kahrimanoğlu</div>
+        <div class="sub">Computer Programmer</div>
+
+        <!-- Sosyal medya ikonları -->
+        <div class="social-links">
+            <a href="https://github.com/BilalKahrimanoglu57" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/seyyid-bilal-3089b5351/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                    alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/bilal.ll1/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+
+    <div class="copyright-text">© 2025 Seyyid Bilal Kahrimanoğlu</div>
+</body>
+
+</html>
